@@ -1,1 +1,5 @@
+[ -r $HOME/.bash_prompt ] && source $HOME/.bash_prompt
 
+[ -r $HOME/.aliases ] && source $HOME/.aliases
+
+[ -r $HOME/.aliases_osx ] && source $HOME/.aliases_osx
