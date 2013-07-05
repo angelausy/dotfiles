@@ -1,0 +1,32 @@
+# Show and hide hidden files in Finder
+alias hhf="defaults write com.apple.finder AppleShowAllFiles FALSE; killall Finder"
+alias shf="defaults write com.apple.finder AppleShowAllFiles TRUE;killall Finder"
+
+# Shortcuts
+alias d='cd ~/Dropbox'
+alias c='cd ~/code'
+alias g='git'
+alias h='history'
+alias v='vi'
+alias o='open'
+alias t='todo.sh -d ~/.todo.cfg'
+
+# Homebrew
+alias bup='brew update && brew upgrade'
+alias bout='brew outdated'
+alias bin='brew install'
+alias brm='brew uninstall'
+alias bls='brew list'
+alias bsr='brew search'
+alias binf='brew info'
+alias bdr='brew doctor'
+
+# Get OS X Software Updates, and update installed Homebrew packages
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup;'
+
+# Recursively delete `.DS_Store` files
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+
+# Gzip-enabled `curl`
+alias gurl='curl --compressed' 
+
